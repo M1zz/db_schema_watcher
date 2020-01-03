@@ -1,0 +1,15 @@
+WhenCreated : 2019-12-24 15:57:37.489531
+--- 
++++ 
+@@ -9,0 +10,6 @@
++AdminMenuUser,"('UserId', 'int(11)', None, 'NO', 'PRI', None, '', 'select', '사용자ID')"
++AdminMenuUser,"('MenuId', 'int(11)', None, 'NO', 'PRI', None, '', 'select', '메뉴ID')"
++AdminPermissionLog,"('AdminPermissionLogNo', 'int(11) unsigned', None, 'NO', 'PRI', None, 'auto_increment', 'select', '권한관리 히스토리no')"
++AdminPermissionLog,"('UserId', 'int(11)', None, 'NO', '', None, '', 'select', '사용자id')"
++AdminPermissionLog,"('ActionType', 'char(2)', 'utf8_general_ci', 'NO', '', None, '', 'select', 'RR:admin권한부여 DR:admin권한제거 RM:메뉴권한부여 DM:메뉴권한제거')"
++AdminPermissionLog,"('Value', 'varchar(300)', 'utf8_general_ci', 'NO', '', None, '', 'select', 'ActionType에 대한 실행값. 권한:roleId 메뉴:menuid')"
+@@ -10,0 +17,4 @@
++AdminPermissionLog,"('Registered', 'datetime', None, 'NO', '', 'CURRENT_TIMESTAMP', '', 'select', '동작일시')"
++AllowAds,"('UserId', 'int(11)', None, 'NO', 'PRI', None, '', 'select', 'federate wadiz_wave_notification.ViewAllowAds')"
++AllowAds,"('AllowAdsSMS', 'bit(1)', None, 'YES', '', None, '', 'select', '')"
++AllowAds,"('AllowAdsEmail', 'bit(1)', None, 'YES', '', None, '', 'select', '')"
